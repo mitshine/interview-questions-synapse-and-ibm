@@ -1,0 +1,155 @@
+prime numbers from 1 to 100.
+
+for(int i = 1; i <= 100; i++)
+  for(int j = 1; j <= 100; j++)
+    if(i != j)
+      if(i%j != 0)
+        print("i as number is a prime number")
+
+
+number 5
+
+for(int j = 1; j <= 100; j++)
+  if(j != 5)
+    if(5%j != 0)
+      print("j is not divisible by any number other than itself")
+print("j as number 5 is a prime number")
+
+
+for(int j = 1; j <= 11; j++)
+  if(j != 11)
+    if(11%j != 0)
+      print("9 is not divisible by any number other than itself")
+      flag = flag + 1
+    else
+      print("9 is not a prime number")
+      // flag1 = flag1 + 1
+
+if(flag > 1)
+  print("given number is a prime number")
+else
+  print("given number is not a prime number")
+
+
+
+
+
+
+
+
+
+
+for(int j = 2; j < 11; j++)
+    if(11%j != 0)
+      print("11 is not divisible by %d", j)
+      flag = flag + 1
+    else
+      print("9 is not a prime number")
+      // flag1 = flag1 + 1
+
+if(flag > 1)
+  print("given number is a prime number")
+else
+  print("given number is not a prime number")
+
+
+
+
+
+
+
+
+
+for(int j = 2; j < 25; j++)
+    flag1 = flag1 + 1
+    if(25%j != 0)
+      print("25 is not divisible by %d", j)
+      flag2 = flag2 + 1
+    else
+      print("25 is not a prime number")
+      // flag1 = flag1 + 1
+
+if(flag1 == flag2)
+  print("given number is a prime number")
+else
+  print("given number is not a prime number")
+
+
+
+
+
+
+int val = 10000
+
+for(int j = 2; j < val - 1; j++)
+    flag1 = flag1 + 1
+    if(val%j != 0)
+      print("%d is not divisible by %d", val, j)
+      flag2 = flag2 + 1
+    else
+      print("%d is not a prime number", val)
+      // flag1 = flag1 + 1
+
+if(flag1 == flag2)
+  print("given number is a prime number")
+else
+  print("given number is not a prime number")
+
+
+
+
+
+
+
+found the prime numbers:
+
+2,3,5,7,11,13,17,19,23
+
+arr = [2,3,5,7,11,13,17,19,23]
+
+arr.append = 29
+
+arr[8] = 34
+
+
+foreach key, value in arr:
+  if(value == 17)
+    print("17 is present in %d", key)
+
+
+
+
+foreach key, value in arr:
+  if(value == 11)
+    arr[key].delete
+    // = 13
+    print("17 is present in %d", key)
+
+
+
+
+
+dut, specification, dut has a clock reset, 8 bit input signal data e, one bit load signal, 8 bit data output signal..
+
+
+load signal high, posedge data input captured and loaded in internal register
+
+
+module tb;
+
+
+
+endmodule
+
+signal 0 counter is decreamenting
+signal 1 counter is increamenting
+
+
+a candle 60 minutes to burn out
+
+2 candles, 2 hours
+
+measure 45 minutes time!
+
+
+

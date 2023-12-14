@@ -1,0 +1,78 @@
+Hi
+
+1.  Write a code to left shift an image of Width*Height by 90 degrees on left.
+imageA [H][W] -> imageB [W][H];
+int H=3, W=5;
+1 2 3 4 5
+2 3 4 5 6
+3 4 5 6 7
+->
+5 6 7
+4 5 6
+3 4 5
+2 3 4
+1 2 3
+
+arr = image
+
+for(H = 0; H <= 10; H++)
+  //for(W = 10; W <= 0; W--)
+  for(W = 0; W <= 10; W++)
+    image[10-H][W] = arr[W][H];
+    
+ 1 (0,0)
+ ->
+ 1 (4,0)
+ 
+ 
+ 
+ 
+ 2. Write code to launch 50 processes in parallel. Each process should “sequentially” execute 3 sub-processes.
+ 
+ fork
+ begin
+   process 1;
+     subprocess 1;
+     subprocess 2;
+     subprocess 3;
+ end
+   begin
+   process 2;
+   ...
+   process 50;
+ join
+ 
+ 
+
+ task proc1(int i);
+     subprocess 1;
+     subprocess 2;
+     subprocess 3;
+     $display(i);
+ endtask
+
+for(i = 0; i < 50; i++)
+//repeat(50)
+fork
+automatic j=i;
+  proc1(j);
+join_none
+
+
+
+
+3.  Write a function to exclude/delete invalid object (valid == 0) from a queue.
+class txn;
+  bit [7:0] data;
+  bit valid;
+endclass
+txn tx_q[$];
+
+//for(int i = 0; i <= tx_q.size(); i++)
+int i=0;
+while(i<tx_q.size()) begin
+ if(tx_q[i].valid == 0)
+    tx_q.delete(i);
+ else
+   i++;
+ 
